@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TEZOVQAT — Tez va qulay onlayn xarid, do‘konlardan yetkazib berish</title>
+<meta name="description" content="TEZOVQAT: do‘konlarni toping, mahsulotlarni savatga qo‘shing va buyurtmangizni yetkazib berishga yuboring. Mijoz, sotuvchi va admin uchun qulay platforma.">
+<meta name="keywords" content="onlayn do‘kon, yetkazib berish, oziq-ovqat, xarid, Navoiy, O‘zbekiston, TEZOVQAT">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#07111f">
+<!-- Sayt domeniga ega bo‘lgach quyidagi qatorni oching va o‘z manzilingizni yozing:
+<link rel="canonical" href="https://SIZNING-DOMEN.uz/">
+<meta property="og:url" content="https://SIZNING-DOMEN.uz/"> -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="uz_UZ">
+<meta property="og:site_name" content="TEZOVQAT">
+<meta property="og:title" content="TEZOVQAT — Tez va qulay onlayn xarid">
+<meta property="og:description" content="Kerakli mahsulot bir necha bosishda: do‘konlarni toping, savatga qo‘shing, yetkazib berishga yuboring.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🛒%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"TEZOVQAT","description":"Do‘konlardan onlayn xarid qilish va yetkazib berish platformasi","inLanguage":["uz","uz-Cyrl"]}
+</script>
+<style>
+:root{--bg:#07111f;--card:rgba(255,255,255,.10);--card2:rgba(255,255,255,.14);--text:#f7fbff;--muted:#b9c7d8;--primary:#19c37d;--danger:#e0384b;--warning:#ffc857;--line:rgba(255,255,255,.14);--shadow:0 18px 50px rgba(0,0,0,.28)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);min-height:100vh;overflow-x:hidden;line-height:1.5}
+body:before,body:after{content:"";position:fixed;z-index:-2;border-radius:50%;filter:blur(65px);opacity:.5;animation:float 12s ease-in-out infinite}
+body:before{width:360px;height:360px;background:#00a8ff;top:-100px;left:-80px}
+body:after{width:420px;height:420px;background:#19c37d;right:-130px;bottom:-160px;animation-delay:-5s}
+@keyframes float{50%{transform:translate(80px,50px) scale(1.12)}}
+#particles{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.p{position:absolute;width:7px;height:7px;background:#fff;border-radius:50%;opacity:.15;animation:rise linear infinite}
+@keyframes rise{from{transform:translateY(110vh)}to{transform:translateY(-20vh)}}
+header{position:sticky;top:0;z-index:20;background:rgba(5,14,27,.8);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:16px;justify-content:space-between}
+.logo{font-size:25px;font-weight:900;letter-spacing:1px;background:none;padding:0;border-radius:6px}.logo span{color:var(--primary)}
+.nav-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+button{font:inherit;border:0;border-radius:13px;padding:11px 15px;color:#fff;background:var(--card2);cursor:pointer;font-weight:700;transition:.2s}
+button:hover{transform:translateY(-1px);filter:brightness(1.12)}
+button:disabled{opacity:.5;cursor:not-allowed;transform:none}
+:focus-visible{outline:3px solid #7cc8ff;outline-offset:2px}
+.primary{background:linear-gradient(135deg,var(--primary),#0caeec);color:#03130e}.danger{background:var(--danger)}.ghost{background:transparent;border:1px solid var(--line)}
+main{max-width:1200px;margin:auto;padding:30px 20px 50px}
+.hero{padding:28px 0 22px;display:flex;justify-content:space-between;gap:25px;align-items:center}
+h1{font-size:clamp(32px,6vw,60px);line-height:1.1;margin:14px 0 12px}.hero p{color:var(--muted);font-size:18px;max-width:650px}
+.badge{display:inline-block;padding:7px 12px;border-radius:30px;background:rgba(25,195,125,.15);color:#62e9b0;border:1px solid rgba(25,195,125,.25);font-size:14px}
+.accent{color:#5de6af}
+.card{background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);backdrop-filter:blur(18px);border-radius:22px;padding:22px}
+.role-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+.role{min-height:180px;display:flex;flex-direction:column;justify-content:space-between;gap:14px}.role .icon{font-size:42px}.role h2{margin:8px 0}.muted{color:var(--muted)}
+.form{max-width:650px;margin:30px auto}.form h2{margin-top:0}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+label{display:block;color:var(--muted);font-size:14px;margin:0 0 6px}
+input,select{width:100%;font:inherit;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:rgba(0,0,0,.28);color:#fff;margin-bottom:13px}
+input::placeholder{color:#8da0b6}
+.actions{display:flex;gap:10px;flex-wrap:wrap}.hidden{display:none!important}
+.section-title{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:26px 0 15px;flex-wrap:wrap}.section-title h2{margin:0}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.product{overflow:hidden;padding:0}.product img{width:100%;height:175px;object-fit:cover;display:block;background:#10243b}.product-body{padding:16px}
+.price{font-size:20px;font-weight:900;color:#6df0b5;margin:7px 0 13px}.shop-tag{font-size:13px;color:#8ecfff}.product h3{margin:6px 0}
+.cart-item{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:13px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}.cart-item:last-child{border-bottom:0}
+.qty{display:inline-flex;align-items:center;gap:6px;margin:0 8px}.qty button{padding:4px 11px}
+.total{font-size:25px;font-weight:900;text-align:right;margin-top:16px}
+.orders{display:grid;gap:12px}.order{padding:16px;border:1px solid var(--line);border-radius:16px;background:rgba(0,0,0,.13)}.order p{margin:4px 0}
+.admin-shop{display:grid;grid-template-columns:1fr auto;gap:15px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.status{display:inline-block;padding:6px 10px;border-radius:20px;font-size:13px;font-weight:800}
+.approved{background:rgba(25,195,125,.18);color:#6df0b5}.pending{background:rgba(255,200,87,.18);color:#ffd56e}.blocked,.rejected{background:rgba(255,82,99,.18);color:#ff9aa5}
+.notice{padding:16px;border-radius:15px;background:rgba(255,82,99,.12);border:1px solid rgba(255,82,99,.3);color:#ffc0c7;margin-bottom:15px;font-weight:700}
+.userpill{color:#cfe0f3;font-size:14px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:40;padding:20px;display:flex;align-items:center;justify-content:center;overflow:auto}.modal .form{margin:0;width:100%}
+.toast{position:fixed;right:20px;bottom:20px;z-index:50;background:#102239;border:1px solid var(--line);padding:14px 17px;border-radius:13px;box-shadow:var(--shadow);max-width:340px}
+footer{max-width:1200px;margin:auto;padding:20px;text-align:center;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media(max-width:900px){.products{grid-template-columns:repeat(2,1fr)}.role-grid{grid-template-columns:1fr}.hero{flex-direction:column;align-items:flex-start}}
+@media(max-width:560px){.grid2{grid-template-columns:1fr}.product img{height:135px}.nav{padding:11px 12px}.logo{font-size:20px}main{padding:20px 12px 40px}.card{padding:16px}.products{gap:10px}.product-body{padding:12px}.actions button{width:100%}.admin-shop{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*,:before,:after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="particles" aria-hidden="true"></div>
+<header>
+ <div class="nav">
+  <div class="logo" id="logo" data-cy="ТЕЗ<span>ОВҚАТ</span> 🛒">TEZ<span>OVQAT</span> 🛒</div>
+  <nav class="nav-actions" aria-label="Asosiy menyu">
+   <button class="ghost" onclick="toggleLang()" id="langBtn" type="button">Кирилл</button>
+   <button class="ghost hidden" id="backBtn" onclick="home()" type="button">Bosh sahifa</button>
+   <span class="userpill" id="userPill"></span>
+   <button class="primary hidden" id="logoutBtn" onclick="logout()" type="button">Chiqish</button>
+  </nav>
+ </div>
+</header>
+<main>
+<section id="home" aria-labelledby="homeTitle">
+ <div class="hero">
+  <div>
+   <span class="badge" data-cy="⚡ ТЕЗ • ОСОН • ҚУЛАЙ">⚡ TEZ • OSON • QULAY</span>
+   <h1 id="homeTitle" data-cy="Керакли маҳсулот<br><span class='accent'>бир неча босишда.</span>">Kerakli mahsulot<br><span class="accent">bir necha bosishda.</span></h1>
+   <p data-cy="Дўконларни топинг, маҳсулотларни саватга қўшинг ва буюртмангизни етказиб беришга юборинг.">Do‘konlarni toping, mahsulotlarni savatga qo‘shing va buyurtmangizni yetkazib berishga yuboring.</p>
+  </div>
+  <div class="card" style="min-width:250px"><b>3 ta bo‘lim</b><p class="muted">Mijoz • Sotuvchi • Admin</p><small class="muted">Mobilga moslashgan • 2 til</small></div>
+ </div>
+ <div class="role-grid">
+  <div class="card role"><div><div class="icon" aria-hidden="true">🛍️</div><h2>Mijoz</h2><p class="muted">Do‘kon va mahsulotlarni ko‘ring, savat yarating va buyurtma bering.</p></div><button class="primary" onclick="show('customerAuth')" type="button">Mijoz bo‘limi</button></div>
+  <div class="card role"><div><div class="icon" aria-hidden="true">🏪</div><h2>Sotuvchi</h2><p class="muted">Do‘kon oching, mahsulot qo‘shing, narxlarni boshqaring va buyurtmalarni ko‘ring.</p></div><button class="primary" onclick="show('sellerAuth')" type="button">Sotuvchi bo‘limi</button></div>
+  <div class="card role"><div><div class="icon" aria-hidden="true">🛡️</div><h2>Admin</h2><p class="muted">Do‘konlarni tasdiqlash, rad etish, bloklash va boshqarish.</p></div><button class="primary" onclick="show('adminAuth')" type="button">Admin bo‘limi</button></div>
+ </div>
+</section>
+
+<section id="customerAuth" class="hidden" aria-labelledby="cAuthT">
+ <div class="card form"><h2 id="cAuthT">👤 Mijoz</h2>
+  <p class="muted">Telefon raqamingiz bilan kiring. Raqam yangi bo‘lsa, ro‘yxatdan o‘tasiz.</p>
+  <div class="grid2"><div><label for="cName">Ism</label><input id="cName" autocomplete="given-name"></div><div><label for="cSurname">Familiya</label><input id="cSurname" autocomplete="family-name"></div></div>
+  <label for="cPhone">Telefon raqami</label><input id="cPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+998 90 123 45 67">
+  <label for="cPass">Parol (kamida 6 ta belgi)</label><input id="cPass" type="password" autocomplete="current-password">
+  <div class="actions"><button class="primary" onclick="customerAuth()" type="button">Kirish / ro‘yxatdan o‘tish</button><button class="ghost" onclick="home()" type="button">Orqaga</button></div>
+ </div>
+</section>
+
+<section id="sellerAuth" class="hidden" aria-labelledby="sAuthT">
+ <div class="card form">
+  <h2 id="sAuthT">🏪 Sotuvchi</h2>
+  <div class="actions" style="margin-bottom:18px">
+   <button id="sellerLoginTab" class="primary" onclick="sellerMode('login')" type="button">Kirish</button>
+   <button id="sellerRegisterTab" class="ghost" onclick="sellerMode('register')" type="button">Ro‘yxatdan o‘tish</button>
+  </div>
+  <div id="sellerLoginForm">
+   <label for="slPhone">Telefon raqami</label><input id="slPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+998 90 123 45 67">
+   <label for="slPass">Parol</label><input id="slPass" type="password" autocomplete="current-password">
+   <div class="actions"><button class="primary" onclick="sellerLogin()" type="button">Kirish</button><button class="ghost" onclick="home()" type="button">Orqaga</button></div>
+  </div>
+  <div id="sellerRegisterForm" class="hidden">
+   <div class="grid2"><div><label for="sName">Ism</label><input id="sName" autocomplete="given-name"></div><div><label for="sSurname">Familiya</label><input id="sSurname" autocomplete="family-name"></div></div>
+   <label for="sShop">Do‘kon nomi</label><input id="sShop" placeholder="Masalan: Baraka Market">
+   <label for="sPhone">Telefon raqami</label><input id="sPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+998 90 123 45 67">
+   <label for="sPass">Parol (kamida 6 ta belgi)</label><input id="sPass" type="password" autocomplete="new-password">
+   <div class="actions"><button class="primary" onclick="sellerRegister()" type="button">Ro‘yxatdan o‘tish</button><button class="ghost" onclick="home()" type="button">Orqaga</button></div>
+   <p class="muted" style="margin-bottom:0">Ro‘yxatdan o‘tgach admin tasdig‘i kerak bo‘ladi.</p>
+  </div>
+ </div>
+</section>
+
+<section id="adminAuth" class="hidden" aria-labelledby="aAuthT">
+ <div class="card form"><h2 id="aAuthT">🛡️ Admin kirishi</h2>
+  <label for="aLogin">Login</label><input id="aLogin" autocomplete="username"><label for="aPass">Parol</label><input id="aPass" type="password" autocomplete="current-password">
+  <div class="actions"><button class="primary" onclick="adminLogin()" type="button">Kirish</button><button class="ghost" onclick="home()" type="button">Orqaga</button></div></div>
+</section>
+
+<section id="customerApp" class="hidden" aria-labelledby="custT">
+ <div class="section-title"><div><h2 id="custT">🛍️ Do‘konlar va mahsulotlar</h2><p class="muted">Tasdiqlangan sotuvchilarning mahsulotlari</p></div><button class="primary" onclick="openCart()" type="button">🛒 Savat (<span id="cartCount">0</span>)</button></div>
+ <label for="search" class="muted">Mahsulot qidirish</label><input id="search" type="search" placeholder="Masalan: non" oninput="renderProducts()">
+ <div id="customerProducts" class="products"></div>
+ <div id="cartBox" class="card hidden" style="margin-top:25px"><div class="section-title"><h2>🛒 Savat</h2><button class="ghost" onclick="closeCart()" type="button">Yopish</button></div><div id="cartList"></div><div class="total" id="cartTotal"></div><button class="primary" style="width:100%;margin-top:15px" onclick="checkout()" type="button">Buyurtma berish</button></div>
+</section>
+
+<section id="checkoutBox" class="hidden" aria-labelledby="chkT">
+ <div class="card form"><h2 id="chkT">🚚 Yetkazib berish</h2><p class="muted">Buyurtma tanlangan do‘kon sotuvchisiga yuboriladi.</p>
+  <div class="grid2"><div><label for="oName">Ism</label><input id="oName"></div><div><label for="oSurname">Familiya</label><input id="oSurname"></div></div>
+  <label for="oPhone">Telefon raqami</label><input id="oPhone" type="tel" inputmode="tel">
+  <label for="oAddress">Yetkazib berish manzili</label><input id="oAddress" autocomplete="street-address" placeholder="Viloyat, shahar, ko‘cha, uy...">
+  <div class="actions"><button class="primary" onclick="placeOrder()" type="button">Buyurtmani tasdiqlash</button><button class="ghost" onclick="showCustomer()" type="button">Bekor qilish</button></div></div>
+</section>
+
+<section id="sellerApp" class="hidden" aria-label="Sotuvchi paneli">
+ <div id="sellerBlocked" class="notice hidden" role="alert">⚠️ Hisobingiz bloklangan. To‘lovni amalga oshiring — akkauntingiz blokdan chiqariladi.</div>
+ <div id="sellerRejected" class="notice hidden" role="alert">Do‘koningiz arizasi rad etildi. Ma’lumot uchun admin bilan bog‘laning.</div>
+ <div id="sellerPending" class="card hidden" style="margin-bottom:20px"><h2>⏳ Admin tasdig‘i kutilmoqda</h2><p class="muted">Do‘koningiz qabul qilingach, mahsulot joylash va buyurtmalarni boshqarish ochiladi.</p></div>
+ <div id="sellerPanel">
+  <div class="section-title"><div><h2>🏪 <span id="sellerShopTitle"></span></h2><p class="muted">Mahsulotlar boshqaruvi • <span id="sellerLimitText"></span></p></div><button class="primary" onclick="showAddProduct()" type="button">+ Mahsulot qo‘shish</button></div>
+  <div class="card"><h3>Mahsulotlarim</h3><div id="sellerProducts"></div></div>
+  <div class="card" style="margin-top:20px"><h3>📦 Buyurtmalar</h3><div id="sellerOrders" class="orders"></div></div>
+ </div>
+</section>
+
+<section id="adminApp" class="hidden" aria-labelledby="admT">
+ <div class="section-title"><div><h2 id="admT">🛡️ Admin panel</h2><p class="muted">Sotuvchilar, do‘konlar va mahsulotlarni boshqarish</p></div><button class="primary" onclick="showAdminAddShop()" type="button">+ Do‘kon qo‘shish</button></div>
+ <div class="card" style="margin-bottom:20px"><h3>🏪 Sotuvchilar</h3><div id="adminSellers"></div></div>
+ <div class="card"><h3>🛒 Do‘konlar va mahsulot limiti</h3><div id="adminStores"></div></div>
+</section>
+</main>
+
+<div id="adminShopModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="adsT">
+ <div class="card form"><h2 id="adsT">🏪 Do‘kon qo‘shish</h2>
+ <label for="adShop">Do‘kon nomi</label><input id="adShop">
+ <div class="grid2"><div><label for="adName">Sotuvchi ismi</label><input id="adName"></div><div><label for="adSurname">Sotuvchi familiyasi</label><input id="adSurname"></div></div>
+ <label for="adPhone">Telefon raqami</label><input id="adPhone" type="tel" inputmode="tel" placeholder="+998 90 123 45 67">
+ <label for="adPass">Parol (kamida 6 ta belgi)</label><input id="adPass" type="password" autocomplete="new-password">
+ <div class="actions"><button class="primary" onclick="adminAddShop()" type="button">Qo‘shish va tasdiqlash</button><button class="ghost" onclick="hideAdminAddShop()" type="button">Bekor qilish</button></div></div>
+</div>
+<div id="productModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="pmT">
+ <div class="card form"><h2 id="pmT">➕ Mahsulot qo‘shish</h2>
+ <label for="pName">Mahsulot nomi</label><input id="pName" maxlength="80">
+ <label for="pPrice">Narxi (so‘m)</label><input id="pPrice" type="number" min="1" step="1" inputmode="numeric">
+ <label for="pImage">Rasm manzili (ixtiyoriy)</label><input id="pImage" type="url" placeholder="https://...">
+ <div class="actions"><button class="primary" onclick="addProduct()" type="button">Saqlash</button><button class="ghost" onclick="hideAddProduct()" type="button">Bekor qilish</button></div></div>
+</div>
+<div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+<footer>© 2026 TEZOVQAT — tez va qulay xarid</footer>
+<noscript><p style="padding:20px;text-align:center">Saytdan foydalanish uchun brauzerda JavaScript yoqilgan bo‘lishi kerak.</p></noscript>
+
+<script>
+"use strict";
+const ADMIN_H="7ea4c89be6a85a69d2536f7dfc13b1f852f94ba6fb061a21db6262a81ef420ad";
+const KEY="tezovqat_data",LKEY="tez_lang",FREE=7,MAXP=71;
+const PH="data:image/svg+xml,"+encodeURIComponent("<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300'><rect width='400' height='300' fill='#10243b'/><text x='200' y='170' font-size='80' text-anchor='middle'>🛒</text></svg>");
+const $=id=>document.getElementById(id);
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+let lang=store.get(LKEY)||"uz",current=null,cart=[],toastTimer;
+
+const img=(id,q)=>`https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=800&q=${q||75}`;
+let db;try{db=JSON.parse(store.get(KEY)||"null")}catch(e){db=null}
+if(!db||!Array.isArray(db.sellers))db={sellers:[{id:"demo",name:"Ali",surname:"Valiyev",shop:"Baraka Market",phone:"+998901112233",h:null,status:"approved",limit:FREE,products:[
+ {id:"p1",name:"Coca Cola 1.5L",price:14000,image:img("1554866585-cd94860890b7")},
+ {id:"p2",name:"Non",price:4000,image:img("1509440159596-0249088772ff")},
+ {id:"p3",name:"Olma",price:12000,image:img("1560806887-1e4cd0b6cbd6")}]}],customers:[],orders:[]};
+db.customers=db.customers||[];db.orders=db.orders||[];
+db.sellers.forEach(s=>{if(s.id==="demo"){delete s.pass;s.h=null}});
+
+function save(){db.sellers.forEach(x=>{x.limit=Math.min(x.limit??FREE,MAXP)});store.set(KEY,JSON.stringify(db))}
+const limitOf=s=>Math.min(s.limit??FREE,MAXP);
+const uid=()=>(crypto.randomUUID?crypto.randomUUID():Date.now()+""+Math.random()).replace(/-/g,"");
+const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+const money=n=>Number(n).toLocaleString("ru-RU").replace(/\u00a0/g," ")+" so‘m";
+const val=id=>$(id).value.trim();
+function toast(t){const x=$("toast");x.textContent=t;x.classList.remove("hidden");clearTimeout(toastTimer);toastTimer=setTimeout(()=>x.classList.add("hidden"),3000)}
+function normPhone(v){let d=String(v).replace(/\D/g,"");if(d.length===9)d="998"+d;return /^998\d{9}$/.test(d)?"+"+d:null}
+const samePhone=(a,b)=>(normPhone(a)||a)===(normPhone(b)||b);
+async function sha(s){if(!(window.crypto&&crypto.subtle))throw new Error("no-crypto");const b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode("tezovqat:"+s));return[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join("")}
+const cred=(phone,pw)=>sha(phone+":"+pw);
+async function verify(u,pw){const ph=normPhone(u.phone)||u.phone;if(u.h)return u.h===await cred(ph,pw);if(u.pass!=null&&u.pass===pw){u.h=await cred(ph,pw);delete u.pass;save();return true}return false}
+async function safe(fn){try{await fn()}catch(e){toast(e.message==="no-crypto"?"Xavfsiz ulanish (HTTPS) talab qilinadi.":"Xatolik yuz berdi. Qayta urinib ko‘ring.")}}
+
+function setUser(role,u,label){current={role,id:u&&u.id};$("logoutBtn").classList.remove("hidden");$("userPill").textContent=label}
+function hideAll(){document.querySelectorAll("main>section").forEach(x=>x.classList.add("hidden"));document.querySelectorAll(".modal").forEach(x=>x.classList.add("hidden"))}
+function show(id){hideAll();$(id).classList.remove("hidden");window.scrollTo({top:0});$("backBtn").classList.toggle("hidden",id==="home");const f=$(id).querySelector("input");if(f&&id.endsWith("Auth"))f.focus({preventScroll:true})}
+function home(){current=null;cart=[];show("home");$("logoutBtn").classList.add("hidden");$("userPill").textContent=""}
+const logout=home;
+function openModal(id,focusId){$(id).classList.remove("hidden");$(focusId).focus()}
+document.addEventListener("keydown",e=>{if(e.key==="Escape")document.querySelectorAll(".modal").forEach(x=>x.classList.add("hidden"))});
+
+/* Mijoz */
+function customerAuth(){safe(async()=>{
+ const ph=normPhone(val("cPhone")),pw=$("cPass").value;
+ if(!ph)return toast("Telefon raqamini to‘g‘ri kiriting: +998 XX XXX XX XX");
+ if(pw.length<6)return toast("Parol kamida 6 ta belgidan iborat bo‘lsin.");
+ let c=db.customers.find(x=>samePhone(x.phone,ph));
+ if(c){if(!await verify(c,pw))return toast("Parol noto‘g‘ri.")}
+ else{const n=val("cName"),s=val("cSurname");if(!n||!s)return toast("Yangi hisob uchun ism va familiyani kiriting.");
+  c={id:uid(),name:n,surname:s,phone:ph,h:await cred(ph,pw)};db.customers.push(c);save()}
+ setUser("customer",c,c.name+" "+c.surname);$("cPass").value="";showCustomer()})}
+function showCustomer(){show("customerApp");renderProducts()}
+function renderProducts(){
+ const q=($("search").value||"").trim().toLowerCase(),arr=[];
+ db.sellers.filter(s=>s.status==="approved").forEach(s=>s.products.forEach(p=>{if(!q||p.name.toLowerCase().includes(q)||s.shop.toLowerCase().includes(q))arr.push({...p,shop:s.shop,sellerId:s.id})}));
+ $("customerProducts").innerHTML=arr.length?arr.map(p=>`<article class="card product"><img src="${esc(p.image||PH)}" alt="${esc(p.name)}" loading="lazy" onerror="this.onerror=null;this.src=PH"><div class="product-body"><div class="shop-tag">🏪 ${esc(p.shop)}</div><h3>${esc(p.name)}</h3><div class="price">${money(p.price)}</div><button class="primary" style="width:100%" onclick="addCart('${p.id}','${p.sellerId}')" type="button">Savatga qo‘shish</button></div></article>`).join(""):`<div class="card" style="grid-column:1/-1"><h3>${q?"Hech narsa topilmadi.":"Hozircha tasdiqlangan do‘kon yoki mahsulot yo‘q."}</h3></div>`;
+ updateCart()}
+const findP=(sid,pid)=>{const s=db.sellers.find(x=>x.id===sid);return s&&s.status==="approved"?s.products.find(y=>y.id===pid):null};
+function addCart(pid,sid){if(!findP(sid,pid))return toast("Mahsulot topilmadi.");const i=cart.find(x=>x.id===pid&&x.sid===sid);if(i)i.qty++;else cart.push({id:pid,sid,qty:1});updateCart();toast("Mahsulot savatga qo‘shildi.")}
+function changeQty(i,d){cart[i].qty+=d;if(cart[i].qty<1)cart.splice(i,1);updateCart()}
+function updateCart(){cart=cart.filter(x=>findP(x.sid,x.id));$("cartCount").textContent=cart.reduce((a,x)=>a+x.qty,0);renderCart()}
+function renderCart(){let total=0;$("cartList").innerHTML=cart.length?cart.map((x,i)=>{const p=findP(x.sid,x.id),sub=p.price*x.qty;total+=sub;return `<div class="cart-item"><div><b>${esc(p.name)}</b><div class="muted">${money(p.price)}</div></div><div><span class="qty"><button type="button" aria-label="Kamaytirish" onclick="changeQty(${i},-1)">−</button><b>${x.qty}</b><button type="button" aria-label="Ko‘paytirish" onclick="changeQty(${i},1)">+</button></span><b>${money(sub)}</b> <button class="danger" aria-label="Savatdan olib tashlash" onclick="changeQty(${i},-999)" type="button">×</button></div></div>`}).join(""):'<p class="muted">Savat bo‘sh.</p>';$("cartTotal").textContent=cart.length?"Jami: "+money(total):""}
+function openCart(){$("cartBox").classList.remove("hidden");renderCart();$("cartBox").scrollIntoView({behavior:"smooth"})}
+function closeCart(){$("cartBox").classList.add("hidden")}
+function checkout(){if(!cart.length)return toast("Avval mahsulot tanlang.");const c=db.customers.find(x=>x.id===current.id);show("checkoutBox");$("oName").value=c.name;$("oSurname").value=c.surname;$("oPhone").value=c.phone}
+function placeOrder(){
+ const n=val("oName"),s=val("oSurname"),ph=normPhone(val("oPhone")),addr=val("oAddress");
+ if(!n||!s||!addr)return toast("Barcha yetkazib berish ma’lumotlarini kiriting.");
+ if(!ph)return toast("Telefon raqamini to‘g‘ri kiriting.");
+ updateCart();if(!cart.length)return toast("Savatdagi mahsulotlar endi mavjud emas.");
+ const groups={};cart.forEach(x=>(groups[x.sid]=groups[x.sid]||[]).push(x));
+ Object.entries(groups).forEach(([sid,items])=>{const lines=items.map(x=>{const p=findP(sid,x.id);return{name:p.name,qty:x.qty,price:p.price}});
+  db.orders.push({id:"Z"+Date.now().toString(36).toUpperCase()+uid().slice(0,3).toUpperCase(),sellerId:sid,customerId:current.id,customer:n+" "+s,phone:ph,address:addr,items:lines,total:lines.reduce((a,l)=>a+l.price*l.qty,0),status:"Yangi",created:new Date().toLocaleString("uz-UZ")})});
+ save();cart=[];toast("Buyurtmangiz sotuvchiga yuborildi!");showCustomer()}
+
+/* Sotuvchi */
+function sellerMode(m){$("sellerLoginForm").classList.toggle("hidden",m!=="login");$("sellerRegisterForm").classList.toggle("hidden",m!=="register");$("sellerLoginTab").className=m==="login"?"primary":"ghost";$("sellerRegisterTab").className=m==="register"?"primary":"ghost"}
+function sellerLogin(){safe(async()=>{
+ const ph=normPhone(val("slPhone")),pw=$("slPass").value,s=ph&&db.sellers.find(x=>samePhone(x.phone,ph));
+ if(!s||!await verify(s,pw))return toast("Telefon yoki parol noto‘g‘ri.");
+ setUser("seller",s,s.shop);$("slPass").value="";showSeller()})}
+function sellerRegister(){safe(async()=>{
+ const n=val("sName"),sn=val("sSurname"),shop=val("sShop"),ph=normPhone(val("sPhone")),pw=$("sPass").value;
+ if(!n||!sn||!shop)return toast("Barcha maydonlarni to‘ldiring.");
+ if(!ph)return toast("Telefon raqamini to‘g‘ri kiriting: +998 XX XXX XX XX");
+ if(pw.length<6)return toast("Parol kamida 6 ta belgidan iborat bo‘lsin.");
+ if(db.sellers.some(x=>samePhone(x.phone,ph)||x.shop.toLowerCase()===shop.toLowerCase()))return toast("Bu telefon yoki do‘kon allaqachon mavjud.");
+ const s={id:uid(),name:n,surname:sn,shop,phone:ph,h:await cred(ph,pw),status:"pending",products:[],limit:FREE};
+ db.sellers.push(s);save();setUser("seller",s,shop);$("sPass").value="";showSeller()})}
+function showSeller(){show("sellerApp");renderSeller()}
+const mySeller=()=>current&&current.role==="seller"?db.sellers.find(x=>x.id===current.id):null;
+function renderSeller(){
+ const s=mySeller();if(!s)return;
+ $("sellerShopTitle").textContent=s.shop;$("sellerLimitText").textContent=s.products.length+"/"+limitOf(s)+" mahsulot";
+ $("sellerBlocked").classList.toggle("hidden",s.status!=="blocked");
+ $("sellerRejected").classList.toggle("hidden",s.status!=="rejected");
+ $("sellerPending").classList.toggle("hidden",s.status!=="pending");
+ $("sellerPanel").classList.toggle("hidden",s.status!=="approved");
+ if(s.status!=="approved")return;
+ $("sellerProducts").innerHTML=s.products.length?s.products.map(p=>`<div class="cart-item"><div><b>${esc(p.name)}</b><div class="muted">${money(p.price)}</div></div><div class="actions"><button onclick="editPrice('${p.id}')" type="button">Narxni tahrirlash</button><button class="danger" onclick="deleteProduct('${p.id}')" type="button">O‘chirish</button></div></div>`).join(""):'<p class="muted">Hali mahsulot qo‘shilmagan. «Mahsulot qo‘shish» tugmasini bosing.</p>';
+ const os=db.orders.filter(o=>o.sellerId===s.id).reverse();
+ $("sellerOrders").innerHTML=os.length?os.map(o=>`<div class="order"><b>Buyurtma #${esc(o.id)}</b> <span class="status pending">${esc(o.status)}</span><p>👤 ${esc(o.customer)} • ☎ ${esc(o.phone)}</p><p>📍 ${esc(o.address)}</p><p>${o.items.map(i=>esc(i.name)+" × "+i.qty).join(", ")}</p><p class="muted">${esc(o.created)}</p><b>${money(o.total)}</b> <button class="primary" style="float:right" ${o.status==="Dostavchik chaqirildi"?"disabled":""} onclick="callCourier('${o.id}')" type="button">🚚 Dostavchi chaqirish</button></div>`).join(""):'<p class="muted">Hozircha buyurtma yo‘q.</p>'}
+function showAddProduct(){const s=mySeller();if(s&&s.products.length>=limitOf(s))return toast("Mahsulot limiti tugagan. Limitni oshirish uchun admin bilan bog‘laning.");openModal("productModal","pName")}
+function hideAddProduct(){$("productModal").classList.add("hidden")}
+function addProduct(){
+ const n=val("pName"),pr=Math.round(Number(val("pPrice"))),im=val("pImage"),s=mySeller();
+ if(!s||s.status!=="approved")return;
+ if(!n||!(pr>0))return toast("Mahsulot nomi va narxini kiriting.");
+ if(im&&!/^https?:\/\//i.test(im))return toast("Rasm manzili https:// bilan boshlanishi kerak.");
+ if(s.products.length>=limitOf(s))return toast("Mahsulot limiti tugagan.");
+ s.products.push({id:"p"+uid().slice(0,10),name:n,price:pr,image:im});save();
+ ["pName","pPrice","pImage"].forEach(i=>$(i).value="");hideAddProduct();renderSeller();toast("Mahsulot qo‘shildi.")}
+function editPrice(id){const s=mySeller(),p=s&&s.products.find(x=>x.id===id);if(!p)return;const v=prompt("Yangi narx (so‘m):",p.price);if(v===null)return;const n=Math.round(Number(v));if(n>0){p.price=n;save();renderSeller();toast("Narx yangilandi.")}else toast("Narx noto‘g‘ri.")}
+function deleteProduct(id){if(!confirm("Mahsulot o‘chirilsinmi?"))return;const s=mySeller();if(!s)return;s.products=s.products.filter(p=>p.id!==id);save();renderSeller();toast("Mahsulot o‘chirildi.")}
+function callCourier(id){const s=mySeller(),o=db.orders.find(x=>x.id===id&&s&&x.sellerId===s.id);if(!o)return;o.status="Dostavchik chaqirildi";save();renderSeller();toast("Dostavchi chaqirish so‘rovi yuborildi.")}
+
+/* Admin */
+function adminLogin(){safe(async()=>{
+ if(await sha(val("aLogin")+":"+$("aPass").value)!==ADMIN_H)return toast("Login yoki parol noto‘g‘ri.");
+ setUser("admin",null,"Admin");$("aPass").value="";showAdmin()})}
+const isAdmin=()=>current&&current.role==="admin";
+function showAdminAddShop(){if(isAdmin())openModal("adminShopModal","adShop")}
+function hideAdminAddShop(){$("adminShopModal").classList.add("hidden")}
+function adminAddShop(){safe(async()=>{
+ if(!isAdmin())return;
+ const shop=val("adShop"),n=val("adName"),sn=val("adSurname"),ph=normPhone(val("adPhone")),pw=$("adPass").value;
+ if(!shop||!n||!sn)return toast("Barcha maydonlarni to‘ldiring.");
+ if(!ph)return toast("Telefon raqamini to‘g‘ri kiriting.");
+ if(pw.length<6)return toast("Parol kamida 6 ta belgidan iborat bo‘lsin.");
+ if(db.sellers.some(x=>x.shop.toLowerCase()===shop.toLowerCase()||samePhone(x.phone,ph)))return toast("Bu do‘kon yoki telefon allaqachon mavjud.");
+ db.sellers.push({id:uid(),name:n,surname:sn,shop,phone:ph,h:await cred(ph,pw),status:"approved",products:[],limit:FREE});
+ save();["adShop","adName","adSurname","adPhone","adPass"].forEach(i=>$(i).value="");hideAdminAddShop();renderAdmin();toast("Do‘kon tasdiqlangan holda qo‘shildi.")})}
+function setStoreLimit(id){if(!isAdmin())return;const s=db.sellers.find(x=>x.id===id),v=prompt("Mahsulot limiti (bepul: "+FREE+", maksimal: "+MAXP+"):",limitOf(s));if(v===null)return;const n=parseInt(v,10);if(!Number.isFinite(n)||n<0||n>MAXP)return toast("Limit 0 dan "+MAXP+" gacha bo‘lishi kerak.");s.limit=n;save();renderAdmin();toast(s.shop+" uchun limit "+n+" taga o‘zgartirildi.")}
+function adminEditProduct(sid,pid){if(!isAdmin())return;const s=db.sellers.find(x=>x.id===sid),p=s&&s.products.find(x=>x.id===pid);if(!p)return;
+ const v=prompt("Yangi narx (so‘m):",p.price);if(v!==null&&Math.round(Number(v))>0)p.price=Math.round(Number(v));
+ const im=prompt("Rasm manzili (https://...):",p.image||"");if(im!==null&&/^https?:\/\//i.test(im.trim()))p.image=im.trim();
+ save();renderAdmin();toast("Mahsulot ma’lumoti yangilandi.")}
+function adminDeleteProduct(sid,pid){if(!isAdmin()||!confirm("Mahsulot o‘chirilsinmi?"))return;const s=db.sellers.find(x=>x.id===sid);s.products=s.products.filter(p=>p.id!==pid);save();renderAdmin()}
+function openAdminStore(id){$("storeProducts_"+id).classList.toggle("hidden")}
+function showAdmin(){show("adminApp");renderAdmin()}
+const ST={approved:"Qabul qilingan",blocked:"Bloklangan",rejected:"Rad etilgan",pending:"Kutilmoqda"};
+function renderAdmin(){
+ $("adminSellers").innerHTML=db.sellers.length?db.sellers.map(s=>`<div class="admin-shop"><div><b>${esc(s.shop)}</b><div class="muted">${esc(s.name)} ${esc(s.surname)} • ${esc(s.phone)}</div><span class="status ${esc(s.status)}">${ST[s.status]||"Kutilmoqda"}</span></div><div class="actions">${s.status!=="approved"&&s.status!=="blocked"?`<button class="primary" onclick="setStatus('${s.id}','approved','Do‘kon qabul qilindi.')" type="button">Qabul qilish</button>`:""}${s.status!=="rejected"&&s.status!=="blocked"?`<button class="ghost" onclick="setStatus('${s.id}','rejected','Do‘kon rad etildi.')" type="button">Rad etish</button>`:""}${s.status==="blocked"?`<button class="primary" onclick="setStatus('${s.id}','approved','Sotuvchi blokdan chiqarildi.')" type="button">Blokdan chiqarish</button>`:`<button class="danger" onclick="setStatus('${s.id}','blocked','Sotuvchi bloklandi.')" type="button">Bloklash</button>`}</div></div>`).join(""):'<p class="muted">Sotuvchilar yo‘q.</p>';
+ $("adminStores").innerHTML=db.sellers.length?db.sellers.map(s=>`<div class="card" style="margin:12px 0;background:rgba(0,0,0,.12)"><div class="admin-shop" style="border:0;padding:0"><div><h3 style="margin:0">${esc(s.shop)}</h3><div class="muted">${esc(s.name)} ${esc(s.surname)} • ${esc(s.phone)}</div><p>Mahsulotlar: <b>${s.products.length}</b> / <b>${limitOf(s)}</b> • Bepul limit: ${FREE} • Maksimal: ${MAXP}</p></div><div class="actions"><button class="primary" onclick="setStoreLimit('${s.id}')" type="button">Limitni o‘zgartirish</button><button onclick="openAdminStore('${s.id}')" type="button">Mahsulotlarni ko‘rish</button></div></div><div id="storeProducts_${s.id}" class="hidden" style="margin-top:15px">${s.products.length?s.products.map(p=>`<div class="cart-item"><div><b>${esc(p.name)}</b><div class="muted">${money(p.price)}</div></div><div class="actions"><button onclick="adminEditProduct('${s.id}','${p.id}')" type="button">🖼️ Rasm / 💰 Narx</button><button class="danger" onclick="adminDeleteProduct('${s.id}','${p.id}')" type="button">O‘chirish</button></div></div>`).join(""):'<p class="muted">Bu do‘konda mahsulot yo‘q.</p>'}</div></div>`).join(""):'<p class="muted">Do‘konlar yo‘q.</p>'}
+function setStatus(id,st,msg){if(!isAdmin())return;const s=db.sellers.find(x=>x.id===id);if(!s)return;s.status=st;save();renderAdmin();toast(msg)}
+
+/* Til */
+function toggleLang(){lang=lang==="uz"?"cy":"uz";store.set(LKEY,lang);applyLang()}
+function applyLang(){
+ $("langBtn").textContent=lang==="uz"?"Кирилл":"Lotin";
+ document.documentElement.lang=lang==="uz"?"uz":"uz-Cyrl";
+ document.querySelectorAll("[data-cy]").forEach(el=>{if(el.dataset.uz===undefined)el.dataset.uz=el.dataset.cy&&el.innerHTML;
+  const isCy=lang==="cy";el.innerHTML=isCy?el.dataset.cy:el.dataset.uz})}
+const pc=$("particles"),calm=matchMedia("(prefers-reduced-motion: reduce)").matches;
+if(!calm)for(let i=0;i<24;i++){const d=document.createElement("i");d.className="p";d.style.left=Math.random()*100+"%";d.style.animationDuration=(8+Math.random()*13)+"s";d.style.animationDelay=(-Math.random()*15)+"s";pc.appendChild(d)}
+applyLang();
+</script>
+</body>
+</html>
